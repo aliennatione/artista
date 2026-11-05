@@ -1,0 +1,16 @@
+---
+import Layout from '../layouts/Layout.astro';
+const items = [
+  { title: 'Monologo 1', desc: 'Dummy descrizione monologo 1' },
+  { title: 'Monologo 2', desc: 'Dummy descrizione monologo 2' },
+];
+---
+<Layout>
+  <h1>Monologhi</h1>
+  {items.map(i => (
+    <article>
+      <h2>{i.title}</h2>
+      <p>{i.desc}</p>
+    </article>
+  ))}
+</Layout>

@@ -1,0 +1,13 @@
+---
+import Layout from '../layouts/Layout.astro';
+const books = [
+  { title: 'Libro A', year: 2022 },
+  { title: 'Libro B', year: 2024 },
+];
+---
+<Layout>
+  <h1>Libri</h1>
+  <ul>
+    {books.map(b => <li>{b.title} ({b.year})</li>)}
+  </ul>
+</Layout>
